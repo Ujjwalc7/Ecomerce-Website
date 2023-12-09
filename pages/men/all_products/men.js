@@ -5,29 +5,29 @@ import carousel from "../../../components/carousel.js";
 import { allProducts } from "../../../product-links/men-products/allProducts.js";
 
 document.addEventListener("DOMContentLoaded", function (){
-    const leftMenBtn = document.getElementById('leftShirtBtn');
-    const rightMenBtn = document.getElementById('rightShirtBtn');
-    const leftWomenBtn = document.getElementById('leftPantBtn');
-    const rightWomenBtn = document.getElementById('rightPantBtn');
-    const leftKidBtn = document.getElementById('leftHoodieBtn');
-    const rightKidBtn = document.getElementById('rightHoodieBtn');
+    const leftShirtBtn = document.getElementById('leftShirtBtn');
+    const rightShirtBtn = document.getElementById('rightShirtBtn');
+    const leftPantBtn = document.getElementById('leftPantBtn');
+    const rightPantBtn = document.getElementById('rightPantBtn');
+    const leftHoodieBtn = document.getElementById('leftHoodieBtn');
+    const rightHoodieBtn = document.getElementById('rightHoodieBtn');
 
     leftShirtBtn.onclick = () =>{
         slider("menShirtCarouselInner", "left");
     };
-    leftShirtBtn.onclick = () =>{
+    rightShirtBtn.onclick = () =>{
         slider("menShirtCarouselInner", "right");
     };
     leftPantBtn.onclick = () =>{
         slider("menPantCarouselInner", "left");
     };
-    leftPantBtn.onclick = () =>{
+    rightPantBtn.onclick = () =>{
         slider("menPantCarouselInner", "right");
     };
     leftHoodieBtn.onclick = () =>{
         slider("menHoodieCarouselInner", "left");
     };
-    leftHoodieBtn.onclick = () =>{
+    rightHoodieBtn.onclick = () =>{
         slider("menHoodieCarouselInner", "right");
     };
 
