@@ -1,0 +1,21 @@
+#product-link{
+    margin-bottom: 50px;
+}
+
+
+
+/* 
+const slideLeftButtons = document.querySelectorAll('.leftBtn');
+        const slideRightButtons = document.querySelectorAll('.rightBtn');
+
+        slideLeftButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                scrollCarousel(carouselInner, 'left');
+            });
+        });
+
+        slideRightButtons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                scrollCarousel(carouselInner, 'right');
+            });
+        }); */
