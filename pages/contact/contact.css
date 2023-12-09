@@ -22,6 +22,7 @@
 
 .image{
     width: 400px;
+    overflow: hidden;
 }
 
 #image1{
