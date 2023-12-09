@@ -191,6 +191,8 @@ svg{
     max-width: 1470px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 /* banner css */
 .banner-section{
@@ -231,9 +233,6 @@ svg{
 
 /* feature product section, carousel div css */
 
-.content{
-    margin-bottom: 50px;
-}
 .featuredProducts{
     display: flex;
     align-items: center;
