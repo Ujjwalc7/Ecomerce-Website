@@ -10,11 +10,11 @@ const navbar = () => {
     if (products) {
         // If the object has a 'products' property, create a select element
         return (
-            `<li key=${id} class="col">
-                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            `<li key=${id} class="col" id="show">
+                <button>
                 ${name}
                 </button>
-                <ul class="products dropdown-menu">
+                <ul class="products">
                 ${products.map((product)=>`<li key=${product.id}><a class="dropdown-item" href="${product.link}">${product.name}</a></li>`).join('')}
                 </ul>
             </li>`
