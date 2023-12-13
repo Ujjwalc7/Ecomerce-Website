@@ -1,0 +1,32 @@
+This is the Part 1 – Front end Development (HTML, CSS, Bootstrap 5, JavaScript)
+of the ecommerce project.
+
+In this project, I have created all the pages and and their sub categories
+pages that is metioned in problem statement.
+
+All the pages are responsive and the header and footer are dynamically
+injected into the pages as metioned in problem statement.
+
+For the header, footer, navbar and the slider in each pages I have created 
+javascript components (components folder) that are dynamically injected into the pages which take
+some properties that are passed in the parameters from where the are invoked to save time and code less.
+
+There is logo folder containing the logo image of the application.
+
+There is a pages folder containing all the pages that are rendered in the browser.
+each folder in the pages folder contains a JS file, a HTML file and a CSS file where needed.
+
+
+At last there is a product-links folder containing all the product-links of the application.
+
+It has a featured-product folder containing featuredProduct.js javascript array of objects data which has
+the products id, name, image, price and description. This array is exported and is 
+imported in the index.js file to render the products dynamically.
+
+It has the folder footer-links and navbar-links containing footerLinks.js file and navbarLinks.js file
+that contains all the product links that is in an array of objects format which is also exported and 
+imported in the footer and navbar component to render the links dynamically in the browser.
+
+Then it has all the mens-product, womens-products and kids-products folder containing all the data of products
+of their respective categories in array of objects format which is also exported and imported in the pages folder
+in the .js file of men, women and kid to render the data dynamically in the browser.

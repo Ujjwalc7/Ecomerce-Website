@@ -1,5 +1,8 @@
 import { navbarLinks} from "../product-links/navbar-links/navbarLinks.js";
 
+
+// creating a fucntion to return elements to the navbar and dispalying the
+// data of navbarLinks to navbar of the website
 const navbar = () => {
     const navbar = document.getElementById('links');
     navbar.innerHTML = navbarLinks.map((item)=>{
@@ -28,5 +31,5 @@ const navbar = () => {
 
     return navbar;
 }
-
+// exporting the function to get the access of the data in different files
 export default navbar;

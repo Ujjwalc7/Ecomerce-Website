@@ -1,5 +1,9 @@
+// this component takes 2 arguments, data of products and categories names
 const carousel = (Products,category) => {
     let carouselInner = null;
+    // this condition checks if the category provided from where they were called
+    //  matches the name of the product's category then assign the element of that category
+    //  to the carouselInner variable
     if(category === 'men'){
         carouselInner = document.getElementById("menCarouselInner");
     }else if(category === 'women'){
@@ -20,6 +24,8 @@ const carousel = (Products,category) => {
     }else if(category === 'men_hoodie'){
         carouselInner = document.getElementById("menHoodieCarouselInner");
     }
+    // after the condition is checked then the data of the products is accessed via .map() function
+    // and injected into the browser
         carouselInner.innerHTML = Products.map((item) => {
             return( `<div class="carouselItem" key=${item.id}>
                 <img loading="lazy" src="${item.image}" alt="product image">

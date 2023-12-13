@@ -1,3 +1,4 @@
+// Links and their headings stored in the array.
 export let footerLinks = [
     {id: 1,
     heading: 'Women',

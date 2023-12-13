@@ -62,15 +62,6 @@
     flex-shrink: 1;
     border: 1px solid rgb(213, 213, 213);
 }
-/* .inputs input:first-child{
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-.inputs input:last-child{
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-} */
-
 
 .btn{
     border-radius: 22px !important;

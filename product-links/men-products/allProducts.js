@@ -1,3 +1,4 @@
+// data of men's products stored in the array
 export const allProducts = [
     {id: 1,
     name: 'Jeans',

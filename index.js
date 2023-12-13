@@ -1,20 +1,30 @@
+// importing all the components from the component folder
 import header from "./components/header.js";
 import navbar from "./components/navbar.js";
 import footer from "./components/footer.js";
+// importing featured products data from the featured products js file
 import { featuredProducts } from "./product-links/featured-product/featuredProducts.js";
 
 
-
+// DOMContentLoaded event listener is fired after the html document has completely loaded
 document.addEventListener("DOMContentLoaded", function (){
-
+// assigning sildeLeft and sildeRight buttons to the variables using 
+// getElementById selector
     const leftBtn = document.getElementById("slideLeft");
     const rightBtn = document.getElementById("slideRight");
-    let width;
+
+    // declaring a variable width and check
+    // if screen width of the window is less than equal to 767px,
+    // then width = 300 else width = 350
+    let width; 
     if(screen.width <= 767){
         width = 300;
     }else{
         width = 350;
     }
+
+    // adding event listeners to the buttons to scroll the element(carouselInner)
+    //  left and right according to the value of width variable
     leftBtn.onclick = () => {
     document.getElementById("carouselInner").scrollLeft -= width;
     };
@@ -23,6 +33,8 @@ document.addEventListener("DOMContentLoaded", function (){
     document.getElementById("carouselInner").scrollLeft += width;
     };
 
+    // injecting data inside the carouselInner <div> using .map() method 
+    // which will return the data of each object in the array and will be rendered into the browser
     const carouselInner = document.getElementById("carouselInner");
     carouselInner.innerHTML = featuredProducts.map((item) => {
         return( `<div class="carouselItem" key=${item.id}>

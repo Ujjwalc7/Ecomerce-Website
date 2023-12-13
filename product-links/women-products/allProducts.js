@@ -1,3 +1,4 @@
+// data of women's prodcts stored in the array.
 export const allProducts = [
     {id: 1,
     name: 'Pink running shoes',

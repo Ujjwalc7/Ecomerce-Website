@@ -1,11 +1,15 @@
+// importing all the components from the component folder
 import header from "../../../components/header.js";
 import navbar from "../../../components/navbar.js";
 import footer from "../../../components/footer.js";
+// importing data of all products from the product-links men-products folder
 import { allProducts } from "../../../product-links/men-products/allProducts.js";
 
-
+// DOMContentLoaded event listener is fired after the html document has completely loaded
 document.addEventListener("DOMContentLoaded", function (){
 
+    // selecting element by id main-div and the data of men-products are accessed through .map() function
+    // and displayed in the browser.
     document.getElementById('main-div')
         .innerHTML = allProducts.map((product) => {
             return (`<div class="item" key=${product.id}>

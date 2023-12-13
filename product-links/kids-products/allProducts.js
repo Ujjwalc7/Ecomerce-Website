@@ -1,3 +1,4 @@
+// data of kid's prodcts stored in the array.
 export const allProducts = [
     {id: 1,
     name: 'Red winter shirt',

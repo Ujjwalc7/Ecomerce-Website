@@ -1,6 +1,8 @@
+// importing data from footerLinks.js for adding links to footer of the website
 import {footerLinks } from "../product-links/footer-links/footerLinks.js";
 
-
+// creating a fucntion to return elements to the footer-row div and dispalying the
+// data of footerLinks to footer of the website
 const footer = () => {
     const footer = document.getElementById('footer-row');
     footer.innerHTML = footerLinks.map((item)=>{
@@ -25,5 +27,5 @@ const footer = () => {
 
     return footer;
 }
-
+// exporting the function to get the access of the data in different files
 export default footer;

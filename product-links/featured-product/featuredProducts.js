@@ -1,3 +1,4 @@
+// data of products that will be displayed in the browser
 export const featuredProducts = [
     {id: 1,
     name: 'Jeans',

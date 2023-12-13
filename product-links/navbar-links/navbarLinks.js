@@ -1,3 +1,4 @@
+// links and their headings stored in the array
 export let navbarLinks = [
     {id: 1, name: 'Home', link: '/'},
     {id: 2, name: 'All products', link: '/pages/all-products/allProducts.html'},

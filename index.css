@@ -133,12 +133,43 @@ svg{
     gap: 10px;
     padding: 0;
 }
+#show button{
+    border: 0;
+    background-color: transparent;
+}
 .products{
+    display: none;
     overflow: hidden;
+    position: absolute;
+    top: 35px;
+    background: white;
+    border-radius: 5px;
+    line-height: 32px;
+    width: 150px;
+    text-align: start;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+    background-color: #f3f3f3;
 }
 
-.products p{
-    margin: 0;
+    
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+.products li:hover{
+    background-color: rgb(252, 246, 236);
+}
+
+.products a{
+    padding-left: 10px;
 }
 
 #product-link ul{
@@ -163,6 +194,12 @@ svg{
     cursor: pointer;
     display: flex;
     align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#show svg{
+    width: 10px;
 }
 
 .products li, a{
@@ -194,6 +231,8 @@ svg{
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+
 /* banner css */
 .banner-section{
     max-width: 1470px;
@@ -344,13 +383,6 @@ footer{
 }
 
 @media screen and (max-width: 1024px) {
-    /* .leftBtn{
-        display: none;
-    }
-    .rightBtn{
-        display: none;
-    } */
-     
     .carouselInner{
         width: 700px;
     }

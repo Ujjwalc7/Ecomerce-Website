@@ -1,3 +1,5 @@
+
+// creatinga fucntion to inject the header into the header section of the web page.
 const header = (src) => {
     let header = document.getElementById('header');
     header.innerHTML = `
@@ -31,4 +33,5 @@ const header = (src) => {
     return header;
     }
 
+// exporting the function to get the access of the data in different files
 export default header;
