@@ -382,7 +382,10 @@ footer{
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024.01px) {
+    #show:focus-within .products{
+        display: block;
+    }
     .carouselInner{
         width: 700px;
     }
@@ -408,5 +411,20 @@ footer{
     }
     #footer-row{
         max-width: 284px;
+    }
+}
+
+@media screen and (min-width:1024.02px) {
+    #show:hover .products{
+        display: block;
+    }
+}
+
+@media screen and (max-width:516px) {
+    .products{
+        width: 100%;
+        top: 70px;
+        left: 0;
+        border-radius: 0;
     }
 }
